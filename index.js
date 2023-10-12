@@ -20,7 +20,7 @@ app.get('/', (req, res) => {
     console.log("Just got a request!")
     res.send("hey")
 })
-app.listen(port,()=>{
-    connectDb();
+app.listen(port,async ()=>{
+    await connectDb();
     console.log(`server on port ${port}`)
 }) 
