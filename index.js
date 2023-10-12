@@ -2,9 +2,9 @@ import express from "express"
 import dotenv from "dotenv"
 import connectDb from "./config/db.js"
 
-//import path from "path"
-// import { fileURLToPath } from "url"
-// import { dirname } from "path"
+import path from "path"
+import { fileURLToPath } from "url"
+import { dirname } from "path"
 
 dotenv.config()
 const app = express()
