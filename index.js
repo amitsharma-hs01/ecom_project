@@ -1,8 +1,10 @@
 import express from "express"
 import dotenv from "dotenv"
-import path from "path"
-import { fileURLToPath } from "url"
-import { dirname } from "path"
+import connectDb from "./config/db.js"
+
+//import path from "path"
+// import { fileURLToPath } from "url"
+// import { dirname } from "path"
 
 dotenv.config()
 const app = express()
@@ -19,5 +21,6 @@ app.get('/', (req, res) => {
     res.send("hey")
 })
 app.listen(port,()=>{
+    connectDb();
     console.log(`server on port ${port}`)
 }) 
