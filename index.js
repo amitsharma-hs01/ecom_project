@@ -1,6 +1,8 @@
 import express from "express"
 import dotenv from "dotenv"
 import connectDb from "./config/db.js"
+import morgan from "morgan"
+import { authRouter } from "./routes/authRoutes.js"
 
 import path from "path"
 import { fileURLToPath } from "url"
@@ -13,13 +15,22 @@ const __filename=fileURLToPath(import.meta.url);
 const __dirname=dirname(__filename)
 
 app.use(express.static(path.join(__dirname,"./client/build")))
-app.use("*",function(req,res){
+app.get("/",function(req,res){
     res.sendFile(path.join(__dirname,"./client/build/index.html"))
 })
-app.get('/', (req, res) => {
-    console.log("Just got a request!")
-    res.send("hey")
-})
+
+//middlewares
+app.use(morgan("dev"))
+app.use(express.json())
+
+//routes
+app.use("/api/v1/auth",authRouter)
+
+
+// app.get('/', (req, res) => {
+//     console.log("Just got a request!")
+//     res.send("hey")
+// })
 app.listen(port,async ()=>{
     await connectDb();
     console.log(`server on port ${port}`)
