@@ -1,0 +1,28 @@
+{
+  "files": {
+    "main.css": "/static/css/main.ffa11893.css",
+    "main.js": "/static/js/main.c34f176b.js",
+    "static/js/787.c4e7f8f9.chunk.js": "/static/js/787.c4e7f8f9.chunk.js",
+    "static/media/signup.png": "/static/media/signup.83ca8e9401f6a41693d5.png",
+    "static/media/login.png": "/static/media/login.4c96ee541a459803f534.png",
+    "static/media/shopping.png": "/static/media/shopping.9e9f051ddf04c5a8b3dc.png",
+    "static/media/logo_text.png": "/static/media/logo_text.8aab4f7258e35d7fda13.png",
+    "static/media/logo.jpg": "/static/media/logo.e2db55d5a838ecf54273.jpg",
+    "static/media/maps-and-flags.png": "/static/media/maps-and-flags.fc1b87bfbca4ef6292d5.png",
+    "static/media/cash-on-delivery.png": "/static/media/cash-on-delivery.3e7327ea6bbf14cd318d.png",
+    "static/media/return-box.png": "/static/media/return-box.c1ccd645bb1b58ee4f31.png",
+    "static/media/home.svg": "/static/media/home.79cb88f17d673c1cb4615d9da140cfac.svg",
+    "index.html": "/index.html",
+    "static/media/bag-shopping-solid.svg": "/static/media/bag-shopping-solid.389a6880b3f05439d695b32a983c06b6.svg",
+    "static/media/heart-solid.svg": "/static/media/heart-solid.4b6a73add9facd9ca5c5c4b07751bf44.svg",
+    "static/media/magnifying-glass-solid.svg": "/static/media/magnifying-glass-solid.e5c6d24b89fe279052ac2a2841c8c18e.svg",
+    "static/media/user-solid.svg": "/static/media/user-solid.a7919f2b1281f718c016b4fa3f654d9b.svg",
+    "main.ffa11893.css.map": "/static/css/main.ffa11893.css.map",
+    "main.c34f176b.js.map": "/static/js/main.c34f176b.js.map",
+    "787.c4e7f8f9.chunk.js.map": "/static/js/787.c4e7f8f9.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.ffa11893.css",
+    "static/js/main.c34f176b.js"
+  ]
+}
