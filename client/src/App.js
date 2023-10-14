@@ -5,7 +5,8 @@ import { Routes, Route } from "react-router-dom";
 import Home from "./pages/home/Home"
 import Cart from "./pages/cart/Cart"
 import Favorites from "./pages/favorites/Favorites"
-import Account from "./pages/AuthenticatedPages/account/Account";
+//import Account from "./pages/AuthenticatedPages/account/Account";
+import Login from './pages/login/Login';
 
 function App() {
   return (
@@ -14,7 +15,8 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/cart" element={<Cart />} />
         <Route path="/favorites" element={<Favorites />} />
-        <Route path="/account" element={<Account/>} />
+        <Route path="/account" element={<Login/>} />
+       {/* <Route path='/login' element={<Login/>} />*/}
       </Routes>
     </Layout>
   );
